@@ -1,0 +1,182 @@
+body{
+	margin: 0%;
+}
+header{
+	background-color: rgb(102, 99, 99);
+	color: white;
+	text-align: center;
+	padding: 0.5vh;
+	font-size: 1.5em;
+	margin: 0%;
+	
+}
+.navigation{
+	margin:0%;
+	background-color: rgb(180, 174, 174);
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 20;
+	
+}
+.links{
+	margin: 0%;
+	/* position: sticky; */
+}
+.links li{
+	display: inline-block;
+	padding: 1%;
+	margin: 0%;
+	position: static;
+}
+.links li:hover{
+	background-color: black;
+}
+.links li:nth-child(2):hover #link1,.links li:nth-child(3):hover #link2{
+	display: block;
+}
+a{
+	text-decoration: none;
+	color: white;
+	margin: 0%;
+}
+#link1 a,#link2 a,#link3 a{
+	text-decoration: none;
+	color: rgb(98, 98, 181);
+	margin: 0%;
+}
+footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 1%;
+	/* display: none; */
+}
+#link1,#link2{
+	background-color: rgb(246, 238, 225);
+	position: absolute;
+	width: 7vw;
+	padding: 0%;
+	display: none;
+}
+#link1 li,#link2 li{
+	display: block;
+	/* position: absolute; */
+}
+#link1 li:hover,#link2 li:hover{
+	background-color: rgb(139, 142, 145);
+}
+.animation{
+	
+	height: 40vh;
+	border: 2px solid steelblue;
+
+	animation-name: animate;
+	animation-delay: 0s; 
+	animation-duration: 40s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes animate{
+	0%{background-image: url("./Images/Animation/ani1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	}
+	25%{background-image: url("./Images/Animation/ani2.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	}
+	50%{background-image: url("./Images/Animation/ani3.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	}
+	75%{background-image: url("./Images/Animation/ani4.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	}
+	100%{background-image: url("./Images/Animation/ani5.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	}
+}
+.img1 {
+	height: 30vh;
+	width:100%;
+	border: 2px solid black;
+	/* position: relative; */
+}
+.img1 img{
+	width: 20%;
+	height: 100%;
+}
+
+
+#CovidCare{
+margin: 10px;
+
+}
+.testkit{
+position: relative;
+border-radius: 10px;
+margin: 5px;
+width: 300px;
+height: 300px;
+background-color:rgb(241, 235, 235);
+display: inline-block;
+}
+.testkit img{
+border-radius: 10px;
+width: 300px;
+height: 300px;
+
+}
+.testkit img:hover{
+border-radius: 10px;
+width: 320px;
+height: 320px;
+
+}
+#CovidCare>div{
+margin: 2%;
+}
+.overlay {
+position: absolute;
+bottom: 0%;
+background-color: white;
+width: 280px;
+border-radius: 5px;
+max-width: 280px;
+transition: .5s ease;
+/* opacity:0; */
+overflow: hidden;
+color: rgb(36, 10, 138);
+padding: 10px;
+background-color: rgb(241, 235, 235);
+
+}
+.heading {
+position: absolute;
+top: 0%;
+background-color: white;
+width: 280px;
+border-radius: 5px;
+max-width: 280px;
+transition: .5s ease;
+background-color: rgb(241, 235, 235);
+overflow: hidden;
+color: rgb(14, 2, 2);
+padding: 10px; 
+
+}
+
+button{
+width: 100%;
+border-radius: 5px;
+color: orange;
+font-weight: bolder;
+height: 4vh;
+}
+button:focus{
+background-color: rgb(250, 234, 230);
+border-color: rgb(0, 255, 76);
+}
